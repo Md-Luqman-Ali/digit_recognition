@@ -405,7 +405,7 @@
   },
   {
    "cell_type": "code",
-   "source": "y_pred = [np.argmax(x) for x in y_pred]\nprediction = pd.DataFrame({\"ImageId\":df_test.index +1, \"Label\":y_pred})\nprediction.to_csv(\"submission.csv\", header=[\"ImageId\", \"Label\"], index=False)",
+   "source": "prediction = pd.DataFrame({\"ImageId\":df_test.index +1, \"Label\":y_pred})\nprediction.to_csv(\"submission.csv\", header=[\"ImageId\", \"Label\"], index=False)",
    "metadata": {
     "execution": {
      "iopub.status.busy": "2023-05-05T07:54:11.472559Z",
